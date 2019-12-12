@@ -16,6 +16,10 @@ import { ExcursionsComponent } from './lifestyle/excursions/excursions.component
 import { ExperiencesComponent } from './lifestyle/experiences/experiences.component';
 import { ResortActivitiesComponent } from './lifestyle/resort-activities/resort-activities.component';
 import { WellnessAndSpaComponent } from './lifestyle/wellness-and-spa/wellness-and-spa.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navegation/header/header.component';
+import { NavtabsComponent } from './navegation/navtabs/navtabs.component';
+import { SidenavListComponent } from './navegation/sidenav-list/sidenav-list.component';
 
 
 const routes: Routes = [
@@ -34,7 +38,11 @@ const routes: Routes = [
   {path: 'excursions', component: ExcursionsComponent},
   {path: 'experiences', component: ExperiencesComponent},
   {path: 'resort-activities', component: ResortActivitiesComponent},
-  {path: 'wellness-and-spa', component: WellnessAndSpaComponent}
+  {path: 'wellness-and-spa', component: WellnessAndSpaComponent},
+  {path: '', component: HomeComponent},
+  {path: 'header', component: HeaderComponent},
+  {path: 'navtabs', component: NavtabsComponent},
+  {path: 'sidenav-list', component: SidenavListComponent}
 ];
 
 @NgModule({

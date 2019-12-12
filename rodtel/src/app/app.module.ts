@@ -21,6 +21,10 @@ import { OffersComponent } from './offers/offers.component';
 import { AuthComponent } from './auth/auth.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navegation/header/header.component';
+import { SidenavListComponent } from './navegation/sidenav-list/sidenav-list.component';
+import { NavtabsComponent } from './navegation/navtabs/navtabs.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +44,11 @@ import { SignupComponent } from './auth/signup/signup.component';
     OffersComponent,
     AuthComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    HomeComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    NavtabsComponent
   ],
   imports: [
     BrowserModule,
