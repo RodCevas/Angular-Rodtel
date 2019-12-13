@@ -25,6 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './navegation/header/header.component';
 import { SidenavListComponent } from './navegation/sidenav-list/sidenav-list.component';
 import { NavtabsComponent } from './navegation/navtabs/navtabs.component';
+import { FlexLayoutModule } from '@Angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { NavtabsComponent } from './navegation/navtabs/navtabs.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
