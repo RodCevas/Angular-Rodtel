@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+
+@include mat-core();
+
+
+$primary: mat-palette($mat-teal, 500, 200, 900);
+$accent:  mat-palette($mat-grey, 200, 50, 500);
+$theme: mat-light-theme($primary, $accent);
+
+@import './app/navegation/navtabs/navtabs.component.scss';
+
+@include angular-material-theme($theme);
+@include navtabs-component-theme($theme);
+
+
+

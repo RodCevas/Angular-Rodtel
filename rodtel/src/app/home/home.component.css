@@ -1,0 +1,29 @@
+.container{
+    background: url(/assets/images/home-beach.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.book-now-container{
+    padding: 50px 100px;
+}
+
+.book-now-button{
+    width: 170px;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase    
+}
+
+.header-container{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.header-container h2{
+    color: #3F383F;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+

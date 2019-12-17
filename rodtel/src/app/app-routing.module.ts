@@ -27,6 +27,7 @@ const routes: Routes = [
   {path: 'auth', component: AuthComponent},
   {path: 'celebrations', component: CelebrationsComponent},
   {path: 'food-beverage', component: FoodBeverageComponent},
+  {path: 'foodAndBeverage', redirectTo: 'food-beverage', pathMatch: 'full'},
   {path: 'lifestyle', component: LifestyleComponent},
   {path: 'offers', component: OffersComponent},
   {path: 'weddings', component: WeddingsComponent},

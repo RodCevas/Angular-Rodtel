@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+@mixin navtabs-component-theme($theme) {
+
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+
+    //if i wanna change the default accent to primary color
+    .navtabs-container{
+        background-color: mat-color($primary, 100);    
+    }  
+}
+
+
