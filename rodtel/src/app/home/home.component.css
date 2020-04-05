@@ -1,29 +1,138 @@
+mat-divider{
+    margin: 80px 0;
+}
+
 .container{
-    background: url(/assets/images/home-beach.jpg) no-repeat;
-    height: 100vh;
+    background: url(/assets/images/home-beach.jpg) center center no-repeat;
+    height: 70vh;
     background-size: cover;
+    color: white;
 }
 
 .book-now-container{
-    padding: 50px 100px;
+    padding: 3% 5% 0;
 }
 
 .book-now-button{
     width: 170px;
     color: white;
     border: 1px solid white;
-    text-transform: uppercase    
+    text-transform: uppercase;   
+    border-radius: 4px; 
 }
 
-.header-container{
-    color: white;
+.header-container{    
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0;   
+    letter-spacing: 0.2em; 
 }
 
-.header-container h2{
-    color: #3F383F;
-    text-transform: capitalize;
-    font-size: 1.5rem;
+.header-container h1{
+    margin-top: 0;
+}
+
+
+.header-container h3{    
+    text-transform: capitalize;    
+}
+
+.thailand{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, -45%);
+}
+
+.thailand h3{
+    -webkit-text-fill-color: transparent; 
+    background: url(/assets/images/thailand_text_background-color.jpg);
+    -webkit-background-clip: text;
+    font-stretch: normal;
+    font-size: 150px;
+    letter-spacing: 0.09em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 2% 0;     
+}
+
+.home-section{
+    margin: 10% 0;
+}
+
+.home-section p{
+    text-align: center;
+    margin: 0 10% 1%;
+}
+
+.rooms-home-display{
+    margin-top: 50px;
+}
+
+mat-card{       
+    background: rgba(255, 248, 225);
+}
+
+mat-card-header h2{
+    text-transform: uppercase;
+    font-size: 1em;    
+}
+
+mat-card-actions button{
+    width: 150px;
+    height: 40px;  
+}
+
+mat-grid-list{
+    margin: 0 10%;
+    background: url(/assets/images/offers-room.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+mat-grid-tile{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color:black;
+}
+
+
+/* MEDIA QUERY */
+
+@media all and (max-width: 850px){
+    .header-container{
+        font-size: 1rem;
+        margin: 5% 0;
+    }
+    .thailand h3{
+        font-size: 100px;            
+    }
+}
+
+@media all and (max-width: 600px){
+    .header-container{
+        font-size: 0.8rem;
+    }
+    .thailand h3{
+        font-size: 75px;
+    }
+}
+
+@media all and (max-width: 400px){
+    .header-container{
+        font-size: 0.6rem;
+        height: 20vh;
+    }
+    .thailand h3{
+        font-size: 50px;
+    }
+    .container{
+        height: 35vh;
+    }
+    .home-section{
+        text-align: center;
+    }
 }
 

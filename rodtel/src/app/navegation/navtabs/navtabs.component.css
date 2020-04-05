@@ -6,7 +6,19 @@
 } */
 
 
+.navtabs-container{
+    font-size: 1em;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 15%;
+}
 
+.navtabs-container a{ 
+    text-decoration: none;
+    color: grey;    
+}
 
-
-
+.navtabs-container a.active{     
+    color: darkslategrey;  
+    border-bottom: 1.5px solid grey;     
+}

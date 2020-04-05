@@ -7,16 +7,6 @@ import {MaterialModule} from './material.module';
 
 import { AccommodationComponent } from './accommodation/accommodation.component';
 import { RoomsComponent } from './accommodation/rooms/rooms.component';
-import { FoodBeverageComponent } from './food-beverage/food-beverage.component';
-import { RestaurantsComponent } from './food-beverage/restaurants/restaurants.component';
-import { BarComponent } from './food-beverage/bar/bar.component';
-import { LifestyleComponent } from './lifestyle/lifestyle.component';
-import { WellnessAndSpaComponent } from './lifestyle/wellness-and-spa/wellness-and-spa.component';
-import { ResortActivitiesComponent } from './lifestyle/resort-activities/resort-activities.component';
-import { ExperiencesComponent } from './lifestyle/experiences/experiences.component';
-import { ExcursionsComponent } from './lifestyle/excursions/excursions.component';
-import { WeddingsComponent } from './weddings/weddings.component';
-import { CelebrationsComponent } from './celebrations/celebrations.component';
 import { OffersComponent } from './offers/offers.component';
 import { AuthComponent } from './auth/auth.component';
 import { SigninComponent } from './auth/signin/signin.component';
@@ -26,22 +16,14 @@ import { HeaderComponent } from './navegation/header/header.component';
 import { SidenavListComponent } from './navegation/sidenav-list/sidenav-list.component';
 import { NavtabsComponent } from './navegation/navtabs/navtabs.component';
 import { FlexLayoutModule } from '@Angular/flex-layout';
+import { FooterComponent } from './navegation/footer/footer.component';
+import { BookingComponent } from './booking/booking.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccommodationComponent,
     RoomsComponent,
-    FoodBeverageComponent,
-    RestaurantsComponent,
-    BarComponent,
-    LifestyleComponent,
-    WellnessAndSpaComponent,
-    ResortActivitiesComponent,
-    ExperiencesComponent,
-    ExcursionsComponent,
-    WeddingsComponent,
-    CelebrationsComponent,
     OffersComponent,
     AuthComponent,
     SigninComponent,
@@ -49,7 +31,9 @@ import { FlexLayoutModule } from '@Angular/flex-layout';
     HomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    NavtabsComponent
+    NavtabsComponent,
+    FooterComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,

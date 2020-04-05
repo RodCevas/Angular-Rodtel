@@ -1,13 +1,55 @@
 <div class="container">
     <div class="book-now-container">
         <div fxFlex fxLayoutAlign="flex-end">
-            <button class="book-now-button" mat-stroked-button color="primary">Book Now</button>
+            <button class="book-now-button" mat-stroked-button color="primary" [routerLink]="['/booking']" routerLinkActive="router-link-active" >Book Now</button>
         </div>
-    </div>
+    </div>  
     <div class="header-container">
-        <div fxFlex fxLayoutWrap fxLayoutGap="0%" fxLayout="column" fxLayoutAlign="center center">
-            <h2>Luxury Beach Front Resort</h2>   
-            <h1>RodTel Beach Resort &amp; Spa</h1>         
+        <div fxFlex fxLayoutWrap fxLayoutGap="0%" fxLayout="column" fxLayoutAlign="center center">              
+            <h1>RodTel Resort &amp; Spa</h1>  
+            <h3>Luxury Beach Front Resort</h3>        
         </div>        
     </div>
+          
 </div>
+<div class="thailand">
+    <h3>Thailand</h3>
+</div>
+<section class="home-section">
+    <div fxLayout="column" fxLayoutAlign="center center">
+        
+        <h2 class="mat-display-2">Asia's Tropical Paradise</h2>            
+    
+        <p>Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Donec rutrum congue leo eget malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
+        
+    </div>
+    <div class="rooms-home-display" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-evenly">
+        <mat-card class="rooms-suites" fxFlex="25">
+            <div fxLayoutAlign="center center">
+                <h2>Rooms &amp; Suites</h2>
+            </div>
+            <img mat-card-image src="/assets/images/rooms.jpg" alt="Rooms and Suites">
+            <mat-card-actions align="center">
+                <button [routerLink]="['/accommodation']" routerLinkActive="router-link-active"  mat-raised-button color="primary">Explore</button>
+            </mat-card-actions>
+        </mat-card>
+
+        <mat-card class="bungalows" fxFlex="25">
+            <div fxLayoutAlign="center center">
+                <h2>Bungalows</h2>
+            </div>
+            <img mat-card-image src="/assets/images/bungalows.jpg" alt="bungalows">
+            <mat-card-actions align="center">
+                <button [routerLink]="['/accommodation']" routerLinkActive="router-link-active"  mat-raised-button color="primary">Explore</button>
+            </mat-card-actions>            
+        </mat-card>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <a [routerLink]="['/offers']" routerLinkActive="router-link-active" >
+        <mat-grid-list cols="1" rowHeight="300">
+            <mat-grid-tile>Up to 40% Off at Rooms at Suites</mat-grid-tile>                    
+        </mat-grid-list>
+    </a>
+</section>

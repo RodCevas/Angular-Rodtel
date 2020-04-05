@@ -1,24 +1,16 @@
-<div class="navtabs-container">
-    <nav mat-tab-nav-bar mat-align-tabs="center" fxFlex fxLayout fxLayoutWrap>
-        
-        <a mat-tab-link routerLink="/" routerLinkActive #home="routerLinkActive" active="home.isActive">
+<div>
+    <mat-toolbar class="navtabs-container" fxLayoutAlign="space-evenly center">
+        <a routerLink="/" routerLinkActive #home="routerLinkActive" active="home.isActive" class="menu-nav active">
             Home
         </a>
-        <a mat-tab-link routerLink="/accommodation" routerLinkActive #accommodation="routerLinkActive" active="accommodation.isActive">
+        <a routerLink="/accommodation" routerLinkActive #accommodation="routerLinkActive" active="accommodation.isActive" class="menu-nav">
             Accommodation
         </a>
-        <a mat-tab-link routerLink="/foodAndBeverage" routerLinkActive #foodAndBeverage="routerLinkActive" [active]="foodAndBeverage.isActive">
-            Food &amp; Beverage
-        </a>
-        <a mat-tab-link routerLink="/lifestyle" routerLinkActive #lifestyle="routerLinkActive" [active]="lifestyle.isActive">
-            Lifestyle
-        </a>
-        <a mat-tab-link routerLink="/celebrations" routerLinkActive #celebrations="routerLinkActive" [active]="celebrations.isActive">
-            Celebrations
-        </a>
-        <a mat-tab-link routerLink="/offers" routerLinkActive #offers="routerLinkActive" [active]="offers.isActive">
+        <a routerLink="/offers" routerLinkActive #offers="routerLinkActive" active="offers.isActive" class="menu-nav">
             Offers
         </a>
-        
-    </nav>
+        <a routerLink="/booking" routerLinkActive #booking="routerLinkActive" active="booking.isActive" class="menu-nav">
+            Booking
+        </a>
+    </mat-toolbar>
 </div>
